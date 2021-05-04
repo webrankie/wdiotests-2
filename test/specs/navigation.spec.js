@@ -3,7 +3,7 @@ import CoursesPage from '../pageobjects/portal/courses.portal.page';
 
 describe('Navigation', () => {
     before(() => {
-        browser.login('bipesew145@gameqo.com', '42601979');
+        browser.login(process.env.LOGIN, process.env.PASSWORD);
     });
 
     beforeEach(() => {
