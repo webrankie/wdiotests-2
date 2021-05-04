@@ -10,8 +10,8 @@ describe('Navigation', () => {
         MainPage.open();
     });
 
-    it('courses page opens', () => {
-        MainPage.goToCourses();
-        CoursesPage.isOpen();
+    it('courses page opens', async () => {
+       await MainPage.goToCourses();
+        await CoursesPage.isOpen();
     });
 });
