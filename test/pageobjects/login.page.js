@@ -27,7 +27,7 @@ class LoginPage extends Page {
        return expect(this.buttonSubmit).toBeDisabled();
     }
 
-         async errorToastAppeared() {
+       async errorToastAppeared() {
        return expect(this.errorToast).toBeDisplayed();
     }
 
