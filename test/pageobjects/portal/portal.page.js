@@ -6,19 +6,19 @@ export default class PortalPage extends Page {
     get linkDiary () { return $('[data-qa="topmenu-Diary"]'); }
     get linkChallenges () { return $('[data-qa="topmenu-Challenges"]'); }
 
-    goToCourses() {
-        this.linkCourses.click();
+    async goToCourses() {
+       return (await this.linkCourses).click();
     }
 
-    goToCards() {
-        this.linkCards.click();
+    async goToCards() {
+        return (await this.linkCards).click();
     }
 
-    goToDiary() {
-        this.linkDiary.click();
+    async goToDiary() {
+       return (await this.linkDiary).click();
     }
 
-    goToChallenges() {
-        this.linkChallenges.click();
+    async goToChallenges() {
+       return (await this.linkChallenges).click();
     }
 }
