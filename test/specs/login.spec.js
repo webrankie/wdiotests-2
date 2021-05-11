@@ -33,4 +33,11 @@ describe('Auth', () => {
        await LoginPage.emptyLoginInput();
        await LoginPage.loginRequiredError();
     });
+
+    it('password input is required', async () => {
+        await LoginPage.setPassword('example');
+        await LoginPage.emptyPasswordInput();
+        await LoginPage.passwordRequiredError();
+    });
+
 });
